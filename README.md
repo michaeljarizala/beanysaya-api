@@ -66,5 +66,5 @@ CORS_WHITELIST=["http://localhost:3000","http://another-client-host.com"]
 Once done, test by running
 
 ```
-$ yarn dev
+$ node server.js
 ```
