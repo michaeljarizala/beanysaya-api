@@ -43,6 +43,18 @@ $ yarn prisma migrate dev --name init
 >
 > We decided to use Prisma for ORM purposes - to make life easier.
 
+For your convenience, you may use the following queries to populate the `Products` table with some sample entries:
+
+```
+INSERT INTO public."Product" ("createdAt","updatedAt",title,description,price,"featuredImage") VALUES
+	 ('2024-08-10 22:52:31.472',NULL,'Arabica - Medium Roast 500g','100% Sagada Arabica medium roasted.',350,'/product1.png'),
+	 ('2024-08-10 22:52:31.472',NULL,'Robusta - Medium Roast 500g','100% Robusta medium roasted.',300,'/product1.png'),
+	 ('2024-08-10 22:52:31.472',NULL,'Arabica - Dark Roast 500g','100% Arabica dark roasted.',350,'/product1.png'),
+	 ('2024-08-10 22:52:31.472',NULL,'Matutum - Medium Roast 500g','Matutum medium roasted to perfection.',450,'/product1.png'),
+	 ('2024-08-10 22:52:31.472',NULL,'Mt. Apo - Dark Roast 500g','Medium roasted beans specifically cultivated in Mt. Apo, Digos City.',450,'/product1.png');
+```
+
+
 ### 5) CORS Implementation
 
 We have also set up CORS for this sample project as CORS is considered minimum requirement for any API app.
